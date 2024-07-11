@@ -1,97 +1,93 @@
 <?php
-// function isPrime($number) {
-//     if ($number <= 1) {
-//         return false;
-//     }
+// $num = '';
 
-//     if ($number <= 3) {
-//         return true;
+// for ($i = 1; $i <= 10; $i++) {
+//     $num .= $i;
+    
+//     if ($i < 10) {
+//         $num .= '-';
 //     }
-
-//     if ($number % 2 == 0 || $number % 3 == 0) {
-//         return false;
-//     }
-//     return true;
 // }
 
-// $input = 3;
-
-// if (isPrime($input)) {
-//     echo $input . " is a prime number";
-// } else {
-//     echo $input . " is not a prime number";
+// echo $num;
+////////////////////////
+// $total;
+// for ($i = 0 ; $i < 30 ; $i++){
+//     $total += $i;
 // }
+// echo "Total: " . $total;
+////////////////////////
+// $z = 5;
+// for ($x = 0 ; $x < 5 ; $x++){
+//     for($y = 10 ; $y > 5 ; $y--){
+//         echo "* ";
+//     }
+//     echo "<br>";
+// }
+////////////////////////
+// $t = 5;
+// $r = 1;
+// for($x = 1; $x <= $t; $x++){
+//     $r *= $x;
+// }
+// echo "The factorial of $t is $r";
+/////////////////////////
+// $num = 10; //عدد الارقام الي بدي اطبق عليه
+// $num0 = 0;
+// $num1 = 1;
+// echo $num0 , " , " , $num1; 
+// for($i = 3 ; $i <= $num ; $i++ ){
+//     $next = $num0 + $num1 ;
+//     echo " , " . $next;
+//     $num0 = $num1;
+//     $num1 = $next;
+// } 
 ///////////////////////////
-// function reverss($string) {
-//     return strrev($string);
-// }
-// $input = "remove";
-
-// $reverss = reverss($input);
-// echo $reverss;
-///////////////////////////
-// function lower($string) {
-//     if ($string === strtolower($string)) {
-//         return "Your String is Ok";
-//     } else {
-//         return "Your String is not Ok";
+// $t = "Orange Coding Academy";
+// $const = 0;
+// $tw = strtolower($t);
+// for ($i = 0; $i < strlen($tw); $i++) {
+//     if ($tw[$i] == 'c') {
+//         $const++;
 //     }
 // }
-
-// $input = "remove";
-
-// $result = lower($input);
-// echo $result;
-///////////////////////////
-// function swap(&$x, &$y) {
-//     $temp = $x;
-//     $x = $y;
-//     $y = $temp;
-// }
-
-// $x = 12;
-// $y = 10;
-
-// echo "Original values: x = $x, y = $y\n";
-
-// swap($x, $y);
-
-// echo "Swapped values: x = $x, y = $y\n";
-///////////////////////////
-// function y($number) {
-//     $sum = 0;
-//     $temp = $number;
-//     while ($temp != 0) {
-//         $digit = $temp % 10;
-//         $sum += $digit ** 3;
-//         $temp = (int)($temp / 10);
+// echo "Number of 'c' characters: " . $const;
+////////////////////////////.
+// echo "<table border='1' cellpadding:'3px' spacing:'0px'>";
+// $avg = $x * $y;
+// for($x = 1 ; $x <= 6 ; $x++){
+//     echo "<tr>";
+//     for($y = 1; $y <= 5 ; $y++){
+//         echo "<td>{$x} * {$y} = " . ($x * $y) ;
 //     }
-//     return $sum == $number;
 // }
-
-// $input = 407;
-
-// if (y($input)) {
-//     echo "$input is an Armstrong Number\n";
-// } else {
-//     echo "$input is not an Armstrong Number\n";
+// echo '</table>';
+////////////////////////////
+// for($i = 1 ; $i <= 50 ; $i++){
+//     if($i % 3 == 0 && $i % 5 == 0 ){
+//         echo "FizzBuzz-";
+//     }
+//     else if($i % 3 == 0){
+//         echo "Fizz-";
+//     }
+//     else if($i % 5 == 0){
+//         echo "Buzz-";
+//     }
+//     else
+//     {
+//         echo $i , "-";
+//     }
 // }
 //////////////////////////////
-// chaaat
-// function isPalindrome($string) {
-//     // إزالة الفراغات وعلامات الترقيم وتحويل الأحرف إلى صغيرة
-//     $filteredString = strtolower(preg_replace("/[^A-Za-z0-9]/", '', $string));
-//     // التحقق مما إذا كانت السلسلة النصية هي نفسها بعد عكسها
-//     return $filteredString == strrev($filteredString);
-// }
+// $tt = 1;
+// for ($rd = 1; $rd <= 6 ; $rd++){
+//     for($tl =1  ; $tl < $rd ; $tl++){
+//         echo $tt , " ";
+//         $tt ++ ; 
+//     }
+// echo "<br>";
+// } 
+///////////////////////////////
 
-// // الإدخال
-// $input = "Eva, can I see bees in a cave?";
 
-// // التحقق وطباعة النتيجة
-// if (isPalindrome($input)) {
-//     echo "Yes, it is a palindrome\n";
-// } else {
-//     echo "No, it is not a palindrome\n";
-// }
 ?>
